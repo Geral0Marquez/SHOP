@@ -1,0 +1,19 @@
+.contenedorCard{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 770px) {
+    .contenedorCard{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+.card__favorito{
+    cursor: pointer;
+}

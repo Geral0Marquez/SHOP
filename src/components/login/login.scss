@@ -1,0 +1,53 @@
+.contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__Login{
+        display: flex;
+        justify-content:center;
+        justify-content:space-evenly;
+        width:500px;
+        margin: 50px auto 0;
+    }
+    &__formulario{
+        width:500px;
+        margin: 20px 0 80px;
+        input,  textarea{
+            width: 100%;
+            padding: .7em;
+            border: none;
+            border-radius: 5px;
+            border-bottom: 1px solid rgb(175, 175, 175);
+        }
+    }
+    &__boton{
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.577);
+        color: #fff;
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 20px;
+        padding: .5em;
+        border: none;
+        box-shadow:1px 1px 2px rgba(229, 75, 75, 0.577);
+    }
+}
+
+.btnLogin{
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btnLogin:hover{
+    transform: scale(1.02);
+}
+
+
+@media screen and (max-width: 750px) {    
+    .contacto{
+        &__Login{
+            width: 100%;           
+        }
+    }
+}

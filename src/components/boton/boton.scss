@@ -1,0 +1,111 @@
+.btn{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 7px;
+    padding: 7px 10px;
+    font-size: 1em;
+    margin: 1.5rem 10px 0 0;
+    border: none;
+    cursor: pointer;
+         &:active {
+            transition: all 0.2s;
+            background-color: rgb(135, 135, 135);
+        }
+    &__Count{
+        background-color: transparent;
+        border-radius: 5px;
+        border: 1px rgb(255, 180, 180) solid; 
+        width: 25px;
+        height: 25px;
+        margin: 5px;
+        font-size: 10px;
+    }
+    &__fav{
+        border: none;
+        background: none;
+        font-size: 30px;
+        position: relative;
+        top: -32px;
+        left: 150px;
+        margin-left: 15px;
+        cursor: pointer;
+        &:active {
+            transition: all 0.2s;
+            transform: scale(1.2);
+        }
+    }
+    &__eliminar {
+        border: none;
+        background: none;
+        font-size: 18px;
+    }
+    &__talle {
+        border-radius: 7px;
+        border: 1px solid rgb(151, 151, 151);
+        padding: 8px;
+        margin: 5px;
+        cursor: pointer;
+        width:45px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        &:active {
+            transition: all 0.2s;
+            background-color: rgb(218, 216, 207);
+        }
+        &-filtro{
+            border-radius: 7px;
+            border: 1px solid rgb(151, 151, 151);
+            cursor: pointer;
+            width:40px;
+            height: 30px;
+            margin: 5px;
+            &:active ,:hover{
+                transition: all 0.2s;
+                background-color: rgb(218, 216, 207);
+            }
+        }
+    }
+    &__color {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        margin: 5px;
+        cursor: pointer;
+        &:active {
+            border: 1px solid rgb(65, 65, 65);
+        }
+        &-rosa{
+            background-color: rgb(255, 170, 159);
+        }
+        &-blanco{
+            background-color: rgb(255, 253, 239);
+        }
+        &-gris{
+            background-color: rgb(165, 165, 165);
+        }
+        &-negro{
+            background-color: rgb(32, 32, 32);
+        }
+        &-verde{
+            background-color: rgb(153, 204, 81);
+        }
+        &-azul{
+            background-color: rgb(134, 188, 204);
+        }
+    }
+} 
+.btn__color .active{
+    border: 1px solid #000;
+}
+@media screen and (max-width: 819px) {
+    .btn__talle {
+        width: 35px;
+        width: 20%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .btn__talle {
+        width: 45px;
+    }
+}
